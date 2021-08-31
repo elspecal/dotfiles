@@ -1,0 +1,84 @@
+# window placement
+moveamount 1
+sticky yes
+snapdist 2
+gap 32 2 2 2
+
+# typo
+fontname "dina:pixelsize=13:style=bold"
+
+# key bindings
+unbind-key all
+
+bind-key MC-Return terminal
+bind-key 4-l lock
+
+bind-key 4-minus window-hide
+bind-key M-Tab window-cycle-ingroup
+bind-key MS-Tab window-rcycle-ingroup
+bind-key MC-q window-delete
+
+bind-key M-1 group-only-1
+bind-key M-2 group-only-2
+bind-key M-3 group-only-3
+bind-key M-4 group-only-4
+bind-key M-5 group-only-5
+bind-key M-6 group-only-6
+bind-key M-7 group-only-7
+bind-key M-8 group-only-8
+bind-key M-9 group-only-9
+
+bind-key MC-1 window-movetogroup-1
+bind-key MC-2 window-movetogroup-2
+bind-key MC-3 window-movetogroup-3
+bind-key MC-4 window-movetogroup-4
+bind-key MC-5 window-movetogroup-5
+bind-key MC-6 window-movetogroup-6
+bind-key MC-7 window-movetogroup-7
+bind-key MC-8 window-movetogroup-8
+bind-key MC-9 window-movetogroup-9
+
+bind-key CS-g window-group
+bind-key M-Tab group-cycle
+bind-key MS-Tab group-rcycle
+
+bind-key MC-f window-fullscreen
+bind-key MC-o window-maximize
+bind-key MC-i window-vmaximize
+bind-key MC-equal window-hmaximize
+
+bind-key M-h window-move-left-big
+bind-key M-j window-move-down-big
+bind-key M-k window-move-up-big
+bind-key M-l window-move-right-big
+bind-key MS-h window-move-left
+bind-key MS-j window-move-down
+bind-key MS-k window-move-up
+bind-key MS-l window-move-right
+bind-key MC-h window-resize-left-big
+bind-key MC-j window-resize-down-big
+bind-key MC-k window-resize-up-big
+bind-key MC-l window-resize-right-big
+bind-key MCS-h window-resize-left
+bind-key MCS-j window-resize-down
+bind-key MCS-k window-resize-up
+bind-key MCS-l window-resize-right
+
+bind-key MC-bar window-vtile
+bind-key MC-minus window-htile
+
+bind-key M5C-f menu-window
+bind-key M-p menu-cmd
+bind-key MC-p menu-exec
+bind-key MCS-r restart
+bind-key MC-Delete quit
+
+# launcher
+command firefox firefox
+command calc xcalc
+
+# groups
+autogroup 0 XClock
+autogroup 2 Firefox
+
+ignore xclock

@@ -1,0 +1,85 @@
+! LOCK SCREEN
+! ====
+
+! Lock the screen by moving to cursor to lower left corner for 1 sec or after 5
+! min inactivity
+XIdle*position: sw
+XIdle*delay:    1
+XIdle*timeout:  300
+
+XLock*description: off
+XLock*mode:        blank
+XLock*background:  #321
+XLock*lockdelay:   3
+XLock*timeout:     15
+XLock*font:        -windows-dina-medium-r-normal--13-*-*-*-*-*-microsoft-cp1252
+XLock*planfont:    -windows-dina-medium-r-normal--13-*-*-*-*-*-microsoft-cp1252
+
+! CLOCK
+! ====
+
+XClock*analog:       false
+XClock*geometry:     -1+2
+XClock*font:         -windows-dina-bold-r-normal--10-*-*-*-*-*-microsoft-cp1252
+XClock*background:   #f4f4f4
+XClock*foreground:   #3e3e3e
+XClock*borderWitdth: 0
+
+! COLORS base16 Default light by Cris Kempson via terminal.sexy
+! ====
+
+! special
+*.foreground:   #303030
+*.background:   #f5f5f5
+*.cursorColor:  #303030
+
+! black
+*.color0:       #151515
+*.color8:       #505050
+
+! red
+*.color1:       #ac4142
+*.color9:       #ac4142
+
+! green
+*.color2:       #90a959
+*.color10:      #90a959
+
+! yellow
+*.color3:       #f4bf75
+*.color11:      #f4bf75
+
+! blue
+*.color4:       #6a9fb5
+*.color12:      #6a9fb5
+
+! magenta
+*.color5:       #aa759f
+*.color13:      #aa759f
+
+! cyan
+*.color6:       #75b5aa
+*.color14:      #75b5aa
+
+! white
+*.color7:       #d0d0d0
+*.color15:      #f5f5f5
+
+! TERMINAL SETTINGS
+! ====
+
+XTerm*loginShell: true
+XTerm*font: -windows-dina-medium-r-normal--13-*-*-*-*-*-microsoft-cp1252
+XTerm*boldFont: -windows-dina-bold-r-normal--13-*-*-*-*-*-microsoft-cp1252
+XTerm*borderWidth: 0
+XTerm*internalBorder: 2
+XTerm*termName: xterm-256color
+XTerm*vt100.saveLines: 10000
+XTerm*vt100.scrollBar: false
+XTerm*vt100.bellIsUrgent: true
+! select from cursor position by clicking
+XTerm*cutToBeginningOfLine: false
+! and do not include new line
+XTerm*cutNewLine: false
+! shift + left click opens selection in browser
+!XTerm*vt100*translations: #override Shift : exec-formatted("firefox '%t'", PRIMARY)
