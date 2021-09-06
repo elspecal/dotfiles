@@ -1,4 +1,4 @@
-local opt = vim.opt
+local opt = vim.opt local cmd = vim.cmd
 
 -- disble some built-in plugins
 local disabled_built_ins = {
@@ -30,6 +30,15 @@ opt.listchars = 'tab:> ,trail:-,nbsp:+,precedes:<,extends:>'
 opt.iskeyword:append '-'
 opt.cursorline = true
 opt.showmode = false
-opt.background = 'light'
 opt.lazyredraw = true
+opt.autochdir = true
+opt.background = 'dark'
 opt.termguicolors = true
+vim.cmd[[colorscheme nord]]
+
+-- nvim-tree
+cmd('let g:nvim_tree_side = "right"')
+cmd('let g:nvim_tree_auto_close = 1')
+-- cmd('let g:nvim_tree_icon_padding = "   "')
+cmd('let g:nvim_tree_follow = 1')
+cmd('let g:nvim_tree_follow_update_path = 1')
