@@ -23,6 +23,9 @@ if [ -f "$usermodmap" ]; then
     xmodmap "$usermodmap"
 fi
 
+# set display colors
+/usr/bin/xcalib -d :0 -s 0 -gc .6 $HOME$HOME/.color/icc/x200.icc
+
 # turn off beep
 xset b off
 # start some nice programs
@@ -34,6 +37,5 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-cbatticon &
 st -g 80x44+0+0 -n login &
 exec awesome
