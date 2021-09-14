@@ -1,6 +1,5 @@
 vim.g.mapleader = ' '
 
-require 'plugins'
 require 'options'
+require 'plugins'
 require 'mappings'
-require 'colors'
