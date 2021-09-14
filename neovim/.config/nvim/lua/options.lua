@@ -34,11 +34,15 @@ opt.lazyredraw = true
 opt.autochdir = true
 opt.background = 'dark'
 opt.termguicolors = true
-cmd 'colorscheme nord'
 
 -- nvim-tree
+----------------
 cmd 'let g:nvim_tree_side = "right"'
 cmd 'let g:nvim_tree_auto_close = 1'
 -- cmd 'let g:nvim_tree_icon_padding = "   "'
 cmd 'let g:nvim_tree_follow = 1'
 cmd 'let g:nvim_tree_follow_update_path = 1'
+
+-- coq
+----------------
+cmd 'let g:coq_settings = { "auto_start": v:true }'
