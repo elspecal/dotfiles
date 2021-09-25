@@ -4,8 +4,8 @@
 ! GENERAL
 ! ============================ 
 
-*.font: JetBrainsMono Nerd Font:style=Regular:size=10
-*.boldFont: JetBrainsMono Nerd Font:style=Bold:size=10
+*.font: JetBrainsMono Nerd Font:style=Medium:size=10
+*.boldFont: JetBrainsMono Nerd Font:style=Extra Bold:size=10
 
 ! XTERM
 ! ================
