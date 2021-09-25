@@ -1,4 +1,5 @@
 vim.cmd 'packadd packer.nvim'
+
 return require 'packer'.startup(function(use)
   use {
     'wbthomason/packer.nvim',
@@ -32,7 +33,7 @@ return require 'packer'.startup(function(use)
 
   use {
     'neovim/nvim-lspconfig',
-    after = 'coq_nvim',
+    after = 'coq.artifacts',
     config = function() require 'plugins.lspconfig' end
   }
 
@@ -78,7 +79,8 @@ return require 'packer'.startup(function(use)
 
   use {
     'ellisonleao/glow.nvim',
-    config = function () vim.g.glow_binary_path = '/usr/bin/' end
+    config = function () vim.g.glow_binary_path = '/usr/bin/' end,
+    cmd = 'Glow'
   }
 
 end)
